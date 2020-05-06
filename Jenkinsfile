@@ -9,7 +9,7 @@ pipeline {
         stage('build') {
             steps {
                 echo 'building the app'
-                echo 'env varible ${new_version}'
+                echo "env varible ${new_version}"
             }
         }
         stage('test')
