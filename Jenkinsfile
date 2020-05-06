@@ -8,4 +8,9 @@ pipeline {
          }
       }
    }
+   post{
+      always{
+         echo 'post script always executed irrespective of build status'
+      }
+   }
 }
