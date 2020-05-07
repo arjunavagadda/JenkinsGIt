@@ -4,11 +4,21 @@ pipeline {
     environment{
         new_version = '1.0.3'
     }
+    parameters {
+        
+        booleanParam(name: 'TOGGLE', defaultValue: true, description: 'Toggle this value')
+
+    }
 
     stages {
         stage('build') {
+            when{
+                expression{
+                    params.TOGGLE
+                }
+            }
             steps {
-                echo 'building the app'
+                echo 'parameter'
                 echo "env varible ${new_version}"
             }
         }
