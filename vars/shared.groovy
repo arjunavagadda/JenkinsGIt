@@ -1,4 +1,4 @@
-def call(String Result){
+def call(String Result = null){
      
     switch('Result') {
     case 'FAILURE':
