@@ -1,4 +1,4 @@
-def call(String "STARTED"){
+def call(String buildStatus = "STARTED"){
      
     switch('${currentBuild.currentResult}') {
     case 'FAILURE':
