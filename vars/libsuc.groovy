@@ -7,6 +7,6 @@ def call(){
 def call(String filter_string){
 
        sparkSend credentialsId: '15e9eb64-1714-4a78-a9cb-674cfe3c6202', 
-       message: "${JOB_NAME}${JOB_URL} <p style="color:red;">${currentBuild.currentResult}</p>", messageType: 'html', spaceList: [[spaceId: '7f719b30-860d-11ea-9583-c154a39de77b']]
+       message: "${JOB_NAME}${JOB_URL} <mark>${currentBuild.currentResult}</mark>", messageType: 'html', spaceList: [[spaceId: '7f719b30-860d-11ea-9583-c154a39de77b']]
 }
 
