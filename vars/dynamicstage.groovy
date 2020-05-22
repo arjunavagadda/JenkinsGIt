@@ -1,14 +1,6 @@
 
 def call(){
 
-    def somefunc() {
-    echo 'echo1'
-}
-
-def somefunc2() {
-    echo 'echo2'
-}
-
 Deploy_step_1 = [
     "ccsitprimarypre": {
         somefunc()
@@ -19,5 +11,13 @@ Deploy_step_1 = [
 ]
 
 
+}
+
+def somefunc() {
+    echo 'echo1'
+}
+
+def somefunc2() {
+    echo 'echo2'
 }
 
