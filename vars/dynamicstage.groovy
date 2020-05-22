@@ -1,5 +1,5 @@
 
-def call(String res){
+def call(){
 
 Deploy_step_1 = [
     "ccsitprimarypre": {
@@ -13,11 +13,11 @@ Deploy_step_1 = [
 
 }
 
-def somefunc() {
-    echo 'echo1'
-}
+// def somefunc() {
+//     echo 'echo1'
+// }
 
-def somefunc2() {
-    echo 'echo2'
-}
+// def somefunc2() {
+//     echo 'echo2'
+// }
 
