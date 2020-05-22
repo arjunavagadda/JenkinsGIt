@@ -1,5 +1,5 @@
 
-def call(){
+def call(String res){
 
 Deploy_step_1 = [
     "ccsitprimarypre": {
