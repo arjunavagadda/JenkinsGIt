@@ -1,4 +1,7 @@
-def somefunc() {
+
+def call(){
+
+    def somefunc() {
     echo 'echo1'
 }
 
@@ -14,3 +17,7 @@ Deploy_step_1 = [
         somefunc2()
     }
 ]
+
+
+}
+
