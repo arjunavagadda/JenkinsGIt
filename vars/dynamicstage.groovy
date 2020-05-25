@@ -6,10 +6,14 @@ def call(){
      def request = libraryResource 'demo.csv'
      println "${request}"
 
-     def data = parseCsv(request)
+     def data = parseCsv(csv, readFirstLine:true,
+                    columnNames:['FirstName
+', 'Country'])
 
      for(line in data) {
-    println "${line}"
+
+    println "$line.FirstName ${line[1]}"
+
     }
 
 
