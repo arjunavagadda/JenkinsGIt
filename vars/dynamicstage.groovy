@@ -7,8 +7,7 @@ def call(){
      println "${request}"
 
      def data = parseCsv(csv, readFirstLine:true,
-                    columnNames:['FirstName
-', 'Country'])
+                    columnNames:['FirstName', 'Country'])
 
      for(line in data) {
 
