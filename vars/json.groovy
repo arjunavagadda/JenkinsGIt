@@ -3,18 +3,22 @@
 import groovy.json.JsonSlurper
 
 
-def call(){
 
-     def request = libraryResource 'Person.json'
-     println "${request}"
+
+def call(${env.JOB_NAME}){
+
+     def request = libraryResource 'lib.json'
+     
 
      def InputJSON = new JsonSlurper().parseText(request)
 
-     
+    println "${env.JOB_NAME}"
 
-     InputJSON.each { k, v ->
-  println k
-}
+    println(InputJSON['Name']) 
+
+
+
+
 
 
 }
