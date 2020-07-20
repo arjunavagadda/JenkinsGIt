@@ -11,17 +11,23 @@ def call(){
 
      def InputJSON = new JsonSlurper().parseText(request)
      
-     println job.getClass() 
+     println "jenkins job name" + job.getClass() 
 
      jobres = job.toString()
      
-     println jobres
+     println "Converted to string" + jobres
      
      println jobres.getClass()
      
-     result = InputJSON.jobres.Name
+     res = InputJSON.Person.Age
      
-     println result
+      println "result without jenkins" + res
+     
+     result = InputJSON.jobres.Age
+     
+   
+     
+     println "req" + result
 
      
 
