@@ -13,13 +13,13 @@ def call(){
      
      println "jenkins job name" + job.getClass() 
      
-     println jobres.getClass()
+     
      
      res = InputJSON.Person.Age
      
       println "result without jenkins" + res
      
-     result = InputJSON.jobres.Age
+     result = InputJSON.job.Age
      
    
      
