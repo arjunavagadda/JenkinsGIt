@@ -1,32 +1,20 @@
-
-
 import groovy.json.JsonSlurper
 
+job = "${JOB_NAME}"
 
+def call(job){
 
-
-def call(){
-     
-     
-     
-     nick = "${BUILD_NUMBER}"
-     
-     job = "${JOB_NAME}"
 
      def request = libraryResource 'lib.json'
-     
 
      def InputJSON = new JsonSlurper().parseText(request)
+
+     println job
+
+     result = InputJSON.job.Name
      
-     println nick
+     println result
 
-   
-
-    println(InputJSON['Name']) 
-
-
-
-
-
+     
 
 }
