@@ -11,9 +11,9 @@ def call(){
 
      def InputJSON = new JsonSlurper().parseText(request)
 
-     println job
-
-     result = InputJSON.Person.Name
+     jobres = job.toString()
+     
+     result = InputJSON.jobres.Name
      
      println result
 
