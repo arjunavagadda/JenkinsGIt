@@ -1,0 +1,15 @@
+pipeline {
+    libraries{
+        lib 'sharedlib'
+    }
+    agent none
+    stages{
+        stage('Run') {
+            steps {
+                script {
+                     dynamicstage()
+                }
+            }
+        }
+    }
+}
