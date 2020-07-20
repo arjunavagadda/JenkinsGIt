@@ -9,11 +9,11 @@ def call(job){
 
      def InputJSON = new JsonSlurper().parseText(request)
 
-     println job
+     // println job
 
-     result = InputJSON.job.Name
+     // result = InputJSON.job.Name
      
-     println result
+     // println result
 
      
 
