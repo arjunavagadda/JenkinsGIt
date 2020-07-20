@@ -13,7 +13,7 @@ def call(){
 
      println job
 
-     result = InputJSON.job.Name
+     result = InputJSON.Person.Name
      
      println result
 
