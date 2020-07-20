@@ -1,8 +1,10 @@
 import groovy.json.JsonSlurper
 
-job = "${JOB_NAME}"
 
-def call(job){
+
+def call(){
+     
+     job = "${JOB_NAME}"
 
 
      def request = libraryResource 'lib.json'
