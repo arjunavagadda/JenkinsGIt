@@ -4,7 +4,7 @@ import groovy.json.JsonSlurper
 
 def call(){
      
-     job = "${JOB_NAME}"
+     job = "${JOB_NAME}".toString()
 
 
      def request = libraryResource 'lib.json'
@@ -12,12 +12,6 @@ def call(){
      def InputJSON = new JsonSlurper().parseText(request)
      
      println "jenkins job name" + job.getClass() 
-     
-     jobres = "${job}".toString()
-
-    
-     
-     println "Converted to string" + jobres
      
      println jobres.getClass()
      
