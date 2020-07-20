@@ -1,19 +1,20 @@
-@Grab('com.xlson.groovycsv:groovycsv:1.0')
-import static com.xlson.groovycsv.CsvParser.parseCsv
+
+
+import groovy.json.JsonSlurper
+
 
 def call(){
 
-     def request = libraryResource 'demo.csv'
+     def request = libraryResource 'Person.json'
      println "${request}"
 
-     def data = parseCsv(request, readFirstLine:true,
-                    columnNames:['FirstName', 'Country'])
+     def InputJSON = new JsonSlurper().parseText(request)
 
-     for(line in data) {
+     
 
-    println "$line.FirstName ${line[1]}"
-
-    }
+     InputJSON.each { k, v ->
+  println k
+}
 
 
 }
